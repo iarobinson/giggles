@@ -2,6 +2,7 @@
 
 require_relative "giggles/version"
 
+# This is a Gem I created as a way to learn Ruby.
 module Giggles
   p("ehhhh eheheheehehe")
   class Error < StandardError; end
