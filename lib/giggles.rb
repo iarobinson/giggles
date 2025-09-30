@@ -3,6 +3,7 @@
 require_relative "giggles/version"
 
 module Giggles
+  p("ehhhh eheheheehehe")
   class Error < StandardError; end
   # Your code goes here...
 

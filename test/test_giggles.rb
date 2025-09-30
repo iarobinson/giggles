@@ -7,7 +7,7 @@ class TestGiggles < Minitest::Test
     refute_nil ::Giggles::VERSION
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_say_hello
+    assert_equal "Giggles says: \"Greetings, earthling!\"", Giggles.hello_world
   end
 end
