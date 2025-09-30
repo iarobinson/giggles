@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
+
+require "giggles"
+
+# If no arguments provided, show help
+if ARGV.empty?
+  puts "Usage: giggles COMMAND [ARGS]"
+  puts "Commands:"
+  puts "  hello_world [NAME] - prints a greeting (default 'world')"
+  puts "  laugh - prints a giggle laugh"
+  exit
+end
+
+# Start the CLI with provided arguments
+Giggles::CLI.start(ARGV)

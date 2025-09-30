@@ -11,4 +11,17 @@ module Giggles
   def self.hello_world(name = "earthling")
     "Giggles says: \"Greetings, #{name}!\""
   end
+
+  class CLI
+    def self.start(args)
+      command = args.shift
+      case command
+      when "say_hello"
+        name = args.shift || "world"
+        puts Giggles.hello_world
+      when "laugh"
+        puts "ehhhhhhh hehe heh he he"
+      end
+    end
+  end
 end
